@@ -118,7 +118,10 @@ function Countries() {
                   className="h-[200px] w-full"
                 />
                 <div className="p-5">
-                  <h1 className="font-bold text-xl mb-2">
+                  <h1
+                    className="font-bold text-xl mb-2 h-7  truncate"
+                    title={country.name.common}
+                  >
                     {country.name.common}
                   </h1>
                   <p className="mb-1">
