@@ -6,14 +6,13 @@ import "./index.css";
 import {
   Route,
   RouterProvider,
-  Routes,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
 
-import Countries from "./components/Countries.jsx";
-import Singlepage from "./components/Singlepage.jsx";
-import NotFound from "./components/NotFound.jsx";
+import Countries from "./pages/Countries.jsx";
+import Singlepage from "./pages/Singlepage.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

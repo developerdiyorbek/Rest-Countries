@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const getTheme = localStorage.getItem("theme");
@@ -24,7 +25,9 @@ function Header() {
   return (
     <header className="bg-white dark:bg-[#2C3743] duration-100 shadow-md px-4 sm:px-1">
       <div className="container mx-auto py-5 flex items-center justify-between">
-        <h2 className="text-2xl dark:text-[#FEFFFF]">Where in the world!</h2>
+        <Link to={"/"}>
+          <h2 className="text-2xl dark:text-[#FEFFFF]">Where in the world!</h2>
+        </Link>
         <button
           className={`text-2xl bg-gray-100 flex items-center justify-center py-2 px-3 rounded dark:bg-slate-600 ${
             theme === "light" ? "text-sky-500" : "text-sky-100"
