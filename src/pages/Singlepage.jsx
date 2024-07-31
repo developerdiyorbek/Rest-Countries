@@ -7,7 +7,6 @@ function Singlepage() {
   const { countryName } = useParams();
 
   const { data, loading } = useFetch(`${BASE_URL}/name/${countryName}`);
-  console.log(data);
 
   return (
     <div className="container mx-auto">
